@@ -199,7 +199,7 @@ if __name__ == '__main__':
     # parser.add_argument('--checkpoint-path', type=str, required=True, help='path to the checkpoint')
     parser.add_argument('--checkpoint-path', type=str, default='weights/checkpoint_iter_370000.pth', help='path to the checkpoint')
     parser.add_argument('--height_size', type=int, default=256, help='network input layer height size')
-    parser.add_argument('--video', type=str, default='rtspsrc location="rtsp://192.168.20.184/live" protocols=4 !'
+    parser.add_argument('--video', type=str, default='rtspsrc location="" protocols=4 !'
                   ' rtph264depay ! h264parse ! nvh264dec ! videoconvert ! video/x-raw,format=BGR !'
                   ' appsink sync=false', help='path to video file or camera id')
     parser.add_argument('--json_file', type=str, default='./video_info.json', help='path to json file')
